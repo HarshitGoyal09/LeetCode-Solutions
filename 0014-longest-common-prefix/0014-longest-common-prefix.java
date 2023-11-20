@@ -7,9 +7,9 @@ class Solution {
             maxLenStr =Math.min(strs[i].length(), maxLenStr);
         }
         for(int i=0; i<maxLenStr;i++){
-            for(int j=0;j<arrLen-1;j++)
+            for(int j=1;j<arrLen;j++)
             {
-                if(strs[j].charAt(i) != strs[j+1].charAt(i)){
+                if(strs[j-1].charAt(i) != strs[j].charAt(i)){
                     return res;
                 }
                 
